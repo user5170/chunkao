@@ -1,0 +1,57 @@
+<header class="header" id="home">
+            <!--/top-bar-->
+            <div class="top-bar">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1>
+                            <a class="navbar-brand" href="index.html">Fettle
+                                <span>Online Yoga Club</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                        <nav>
+                            <ul class="top_nav">
+                                <li>
+                                    <a <?php if($nav == 'index'){echo "class='active'";} ?>  href="index.html">首页</a>
+                                </li>
+                                <li>
+                                    <a  <?php if($nav == 'about'){echo "class='active'";} ?> href="{:url('about')}">关于我们</a>
+                                </li>
+                                <li>
+                                    <a  <?php if($nav == 'intro'){echo "class='active'";} ?> href="{:url('intro')}">业务介绍</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class=" <?php if($nav == 'style'){echo "active";} ?> dropdown-toggle" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">学院风采
+                                        <span class="fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="{:url('style',array('type'=>'teach'))}">教师风采</a>
+                                        </li>
+                                        <li>
+                                            <a href="{:url('style',array('type'=>'study'))}">学员风采</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="{:url('apply')}" <?php if($nav == 'apply'){echo "class='active'";} ?> href="{:url('apply')}">在线报名</a>
+                                </li>
+                                <li>
+                                    <a href="{:url('charge')}" <?php if($nav == 'charge'){echo "class='active'";} ?> href="{:url('charge')}">收费标准</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+            <!--//top-bar-->
+        </header>

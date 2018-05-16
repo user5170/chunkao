@@ -149,6 +149,7 @@ return [
         '__UPLOAD__' =>__PUBLIC__.'/uploads',
         '__ADMIN__'    => __PUBLIC__.'/static/admin',
         '__HOME__'     => __PUBLIC__.'/static/home',
+        '__GW__'     => __PUBLIC__.'/static/gw',
     ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
